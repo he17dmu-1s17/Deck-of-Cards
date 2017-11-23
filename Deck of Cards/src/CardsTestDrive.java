@@ -36,10 +36,13 @@ public class CardsTestDrive {
 		System.out.println("Deck: " + deck);
 		System.out.println(deck.cardCount() + " cards in deck");
 		
+<<<<<<< HEAD
 		System.out.println("Assigning Rommy values...");
 		FaceValue.setValues(FaceValue.ROMMY_VALUES);
 		System.out.println("Points awarded: " + (card.getFaceValue().getValue() + card2.getFaceValue().getValue())+ "you are awesome");
 
+=======
+>>>>>>> parent of 72c560c... Added getFaceValue method to Card class.
 	}
 
 }

@@ -18,7 +18,6 @@ public enum FaceValue {
 	public static final int[] STANDARD_VALUES = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
 	public static final int[] ACE_HIGH_VALUES = {14, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
 	public static final int[] BLACK_JACK_VALUES = {11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10};
-	public static final int[] ROMMY_VALUES = {15, 5, 5, 5, 5, 5, 5, 5, 5, 10, 10, 10, 10};
 	
 	private int value;
 
