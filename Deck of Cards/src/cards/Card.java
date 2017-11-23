@@ -36,4 +36,8 @@ public class Card implements Comparable {
 		return suit;
 	}
 
+	public FaceValue getFaceValue() {
+		return value;
+	}
+
 }
