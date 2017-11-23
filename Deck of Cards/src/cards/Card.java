@@ -1,6 +1,6 @@
 package cards;
 
-public class Card implements Comparable<Card> {
+public class Card implements Comparable {
 	private Suit suit;
 	private FaceValue value;
 	
@@ -8,17 +8,16 @@ public class Card implements Comparable<Card> {
 		this.value = value;
 		this.suit = suit;
 	}
-	public void UselessMethod() {
-		
-	}
 	
 	@Override
 	public String toString() {
 		return value + " of " + suit;
 	}
 
+
 	@Override
-	public int compareTo(Card otherCard) {
+	public int compareTo(Object arg0) {
+		Card otherCard = (Card) arg0;
 		if (this.value.getValue() > otherCard.value.getValue())
 			return 1;
 		else if (this.value.getValue() < otherCard.value.getValue())
@@ -32,6 +31,10 @@ public class Card implements Comparable<Card> {
 			return true;
 		else
 			return false;
+	}
+	
+	public void insertMention() {
+		System.out.println("why do I need a method to add a sytem.out.print?");
 	}
 
 	public Suit getSuit() {
