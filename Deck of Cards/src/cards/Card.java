@@ -8,6 +8,9 @@ public class Card implements Comparable {
 		this.value = value;
 		this.suit = suit;
 	}
+	public void UselessMethod() {
+		
+	}
 	
 	@Override
 	public String toString() {
