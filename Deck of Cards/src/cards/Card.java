@@ -1,6 +1,6 @@
 package cards;
 
-public class Card implements Comparable {
+public class Card implements Comparable<Card> {
 	private Suit suit;
 	private FaceValue value;
 	
@@ -18,8 +18,7 @@ public class Card implements Comparable {
 	}
 
 	@Override
-	public int compareTo(Object arg0) {
-		Card otherCard = (Card) arg0;
+	public int compareTo(Card otherCard) {
 		if (this.value.getValue() > otherCard.value.getValue())
 			return 1;
 		else if (this.value.getValue() < otherCard.value.getValue())
