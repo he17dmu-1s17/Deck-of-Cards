@@ -38,7 +38,7 @@ public class CardsTestDrive {
 		
 		System.out.println("Assigning Rommy values...");
 		FaceValue.setValues(FaceValue.ROMMY_VALUES);
-		System.out.println("Points awarded: " + (card.getFaceValue().getValue() + card2.getFaceValue().getValue())+ "you are awesome");
+		System.out.println("Points awarded: " + (card.getFaceValue().getValue() + card2.getFaceValue().getValue()));
 
 	}
 
