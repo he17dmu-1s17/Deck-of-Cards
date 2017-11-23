@@ -14,6 +14,7 @@ public class Card implements Comparable {
 		return value + " of " + suit;
 	}
 
+
 	@Override
 	public int compareTo(Object arg0) {
 		Card otherCard = (Card) arg0;
@@ -30,6 +31,10 @@ public class Card implements Comparable {
 			return true;
 		else
 			return false;
+	}
+	
+	public void insertMention() {
+		System.out.println("why do I need a method to add a sytem.out.print?");
 	}
 
 	public Suit getSuit() {
